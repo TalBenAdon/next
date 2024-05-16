@@ -1,0 +1,50 @@
+@use "@/app/vars" as *;
+
+.element {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    h2 {
+        font-size: 16px;
+        // color: $lightText;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
+
+.price {
+    font-weight: $subTitleWeight;
+    font-size: 14px;
+}
+
+.rating {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.locationRating {
+    display: flex;
+    justify-content: space-between;
+    min-width: 0;
+}
+
+.hotelImg {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 0.8rem;
+}
+
+
+
+.title {
+    color: $lightText;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

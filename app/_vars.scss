@@ -1,0 +1,13 @@
+$mainColor: var(--main-color);
+$subTitleWeight: var(--title-wight);
+$lightBorderClr: var(--light-border);
+$lightText: var(--light-text);
+$mainTextColor: var(--text-color);
+$mainBackgroundColor: var(--bg-color);
+$lightColor: var(--line-color);
+
+.flex-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
