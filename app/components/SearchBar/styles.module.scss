@@ -1,0 +1,73 @@
+@use "@/app/vars" as *;
+
+.searchContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    width: 200px;
+
+
+    &:hover {
+        .textInput {
+            width: 100%;
+            padding-inline-start: 30px;
+
+            .searchIcon {
+                opacity: 0;
+            }
+        }
+
+
+    }
+}
+
+
+.inputContainer {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.textInput {
+    z-index: 0;
+    height: 32px;
+    width: 32px;
+    border-radius: 50px;
+    border: 1px black solid;
+    outline: none;
+    padding: 16px;
+
+    &:focus {
+        width: 100%;
+        padding-inline-start: 30px;
+
+
+    }
+
+
+
+    transition: all 0.7s ease;
+
+
+}
+
+.searchIcon {
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    left: 16.5px;
+    transform: translateX(-50%);
+
+    pointer-events: none;
+
+
+
+}
+
+// .focused {
+//     opacity: 0;
+//     transition: all 0.2s ease;
+// }

@@ -1,10 +1,13 @@
 import React from 'react'
 import styles from './styles.module.scss'
 import Image from 'next/image';
+import { connectToMongo } from '@/DL/connectToMongo';
+import { getHotelById } from '@/BL/hotel.service';
 export default async function Hotel({ params }) {
     console.log({ hotelId: params.hotelId });
-    const hotel = await fetch(`http://localhost:3003/api/listings/${params.hotelId}`)
-        .then(res => res.json())
+    connectToMongo()
+    const hotel = await getHotelById(params.hotelId)
+    console.log({ hotel });
     return (
         <div className={styles.screenSize}>
             <div className={styles.myHouseContainer}>

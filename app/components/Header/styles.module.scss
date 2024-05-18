@@ -5,30 +5,29 @@
     @extend .flex-c;
     width: 100%;
     padding: .7rem 40px;
-
+    border-bottom: 1px $lightColor solid;
 }
 
 .logoDiv {
     color: $mainColor;
-    font-size: 30px;
+    font-size: 26px;
     display: flex;
     align-items: center;
-    font-weight: 550;
+    font-weight: 500;
 }
 
 .navBar {
-    ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        gap: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
 
-        li {
-            display: flex;
-            align-items: center;
-            font-size: 16px;
-            font-weight: $subTitleWeight ;
-        }
+    li {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: $subTitleWeight ;
+
     }
 }
 
@@ -50,7 +49,8 @@
     border-radius: 2rem;
 }
 
-@media(width > 1440px) {
+
+@media(width > 1439px) {
     .userIcon {
         padding: 5px;
         gap: .5rem;
@@ -63,11 +63,11 @@
     }
 
     .navBar {
-        ul {
-            li {
-                font-size: 14px;
-            }
+
+        li {
+            font-size: 12px;
         }
+
     }
 
 }
